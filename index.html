@@ -1,12 +1,176 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Things We Love in Malaysia</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: linear-gradient(to bottom, #f3f5f4, #e8ecea);
+        color: #1f2a24;
+    }
+
+    .container {
+        max-width: 1150px;
+        margin: auto;
+        padding: 50px 20px;
+    }
+
+    h1 {
+        font-size: 38px;
+        font-weight: 600;
+        margin-bottom: 8px;
+        letter-spacing: -0.5px;
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 300;
+        color: #5f6f66;
+        margin-bottom: 45px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+    }
+
+    .card {
+        background: #ffffff;
+        padding: 18px;
+        border-radius: 14px;
+        box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+        transition: all 0.25s ease;
+        border: 1px solid rgba(0,0,0,0.04);
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 14px 35px rgba(0,0,0,0.08);
+    }
+
+    .card h3 {
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 12px;
+        color: #2f5d50; /* deep green accent */
+    }
+
+    iframe {
+        width: 100%;
+        height: 170px;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 12px;
+        background: linear-gradient(135deg, #dfe7e3, #cfdad4);
+    }
+
+    .card p {
+        font-size: 13.5px;
+        color: #4f5d55;
+        line-height: 1.6;
+        margin: 6px 0;
+    }
+
+    /* subtle divider between paragraphs */
+    .card p + p {
+        border-top: 1px solid rgba(0,0,0,0.05);
+        padding-top: 6px;
+    }
+
+    @media (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @media (max-width: 500px) {
+        .grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
 </head>
+
 <body>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+<div class="container">
+
+    <h1>Things We Love in Malaysia</h1>
+    <h2>A refined look into culture, movement, and everyday beauty</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Food Culture</h3>
+            <iframe src=""></iframe>
+            <p>Malaysia’s food reflects layers of cultural influence blended into daily life.</p>
+            <p>It creates shared experiences that connect people across backgrounds.</p>
+        </div>
+
+        <div class="card">
+            <h3>Street Life</h3>
+            <iframe src=""></iframe>
+            <p>The streets carry a constant sense of movement and interaction.</p>
+            <p>They capture the rhythm and pulse of the city.</p>
+        </div>
+
+        <div class="card">
+            <h3>Nature & Rainforests</h3>
+            <iframe src=""></iframe>
+            <p>Green landscapes remain a defining feature of the environment.</p>
+            <p>They offer balance and contrast to urban development.</p>
+        </div>
+
+        <div class="card">
+            <h3>Night Markets</h3>
+            <iframe src=""></iframe>
+            <p>Markets transform ordinary spaces into vibrant social hubs.</p>
+            <p>They bring together food, sound, and community.</p>
+        </div>
+
+        <div class="card">
+            <h3>Architecture</h3>
+            <iframe src=""></iframe>
+            <p>Structures reflect both heritage and modern ambition.</p>
+            <p>This blend shows a country constantly evolving.</p>
+        </div>
+
+        <div class="card">
+            <h3>Festivals</h3>
+            <iframe src=""></iframe>
+            <p>Celebrations highlight the diversity within the nation.</p>
+            <p>They strengthen identity and shared traditions.</p>
+        </div>
+
+        <div class="card">
+            <h3>Beaches</h3>
+            <iframe src=""></iframe>
+            <p>Coastal areas provide moments of calm and openness.</p>
+            <p>They contrast the density of urban environments.</p>
+        </div>
+
+        <div class="card">
+            <h3>Cafés & Hangouts</h3>
+            <iframe src=""></iframe>
+            <p>Modern spaces reflect lifestyle and social habits.</p>
+            <p>They serve as points of connection and pause.</p>
+        </div>
+
+        <div class="card">
+            <h3>Daily Life</h3>
+            <iframe src=""></iframe>
+            <p>Everyday routines reveal the authentic character of a place.</p>
+            <p>They highlight moments that feel grounded and real.</p>
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
