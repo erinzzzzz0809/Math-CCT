@@ -17,7 +17,7 @@
 
 body{
     background:
-    linear-gradient(rgba(255,255,255,0.78), rgba(255,255,255,0.82)),
+    linear-gradient(rgba(255,255,255,0.80), rgba(255,255,255,0.84)),
     url('https://images.unsplash.com/photo-1508964942454-1a56651d54ac?q=80&w=2070&auto=format&fit=crop');
     background-size:cover;
     background-attachment:fixed;
@@ -29,7 +29,7 @@ body{
 
 .header{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:65px;
 }
 
 .header h1{
@@ -43,9 +43,9 @@ body{
 .header p{
     font-size:1.15rem;
     color:#444;
-    max-width:750px;
+    max-width:760px;
     margin:auto;
-    line-height:1.7;
+    line-height:1.8;
 }
 
 /* GRID */
@@ -59,17 +59,16 @@ body{
 /* CARDS */
 
 .card{
-    background:rgba(255,255,255,0.92);
+    background:rgba(255,255,255,0.93);
     backdrop-filter:blur(10px);
     border-radius:24px;
     padding:22px;
     box-shadow:0 12px 28px rgba(0,0,0,0.12);
     transition:0.35s ease;
-    border:2px solid rgba(255,255,255,0.4);
 }
 
 .card:hover{
-    transform:translateY(-8px) scale(1.01);
+    transform:translateY(-8px);
 }
 
 iframe{
@@ -81,7 +80,7 @@ iframe{
     background:#ddd;
 }
 
-/* MAIN TITLES */
+/* TITLES */
 
 .card h3{
     font-size:1.45rem;
@@ -89,24 +88,22 @@ iframe{
     font-weight:700;
 }
 
-/* DIFFERENT TITLE COLOURS */
+/* TITLE COLOURS */
 
-.food-title{
-    color:#c0392b;
-}
-
-.nature-title{
-    color:#0b8457;
-}
-
-.culture-title{
-    color:#1f5faa;
-}
+.food-title{ color:#b22222; }
+.nature-title{ color:#0b8457; }
+.culture-title{ color:#1f5faa; }
+.market-title{ color:#d97706; }
+.city-title{ color:#7c3aed; }
+.festival-title{ color:#db2777; }
+.art-title{ color:#0f766e; }
+.cafe-title{ color:#92400e; }
+.life-title{ color:#374151; }
 
 /* MINI SUBHEADINGS */
 
 .subheading-group{
-    margin-bottom:28px;
+    margin-bottom:30px;
 }
 
 .mini-sub{
@@ -116,33 +113,19 @@ iframe{
     letter-spacing:0.3px;
 }
 
-/* DIFFERENT MINI SUBHEADING COLOURS */
+/* LIGHTER SHADES OF TITLES */
 
-.gold{
-    color:#d4a017;
-}
+.food-sub{ color:#d65a5a; }
+.nature-sub{ color:#3aa17c; }
+.culture-sub{ color:#5f89d8; }
+.market-sub{ color:#f0a63a; }
+.city-sub{ color:#9d6df5; }
+.festival-sub{ color:#f062a6; }
+.art-sub{ color:#38a89d; }
+.cafe-sub{ color:#b7791f; }
+.life-sub{ color:#6b7280; }
 
-.teal{
-    color:#00897b;
-}
-
-.red{
-    color:#c62828;
-}
-
-.blue{
-    color:#1565c0;
-}
-
-.orange{
-    color:#ef6c00;
-}
-
-.purple{
-    color:#7b1fa2;
-}
-
-/* TEXT BLOCKS */
+/* TEXT SECTIONS */
 
 .text-section{
     margin-top:24px;
@@ -150,33 +133,15 @@ iframe{
     border-radius:16px;
 }
 
-/* DIFFERENT BACKGROUND COLOURS */
-
-.soft-red{
-    background:#fff0ee;
-}
-
-.soft-green{
-    background:#eefaf4;
-}
-
-.soft-blue{
-    background:#eef5ff;
-}
-
-.soft-yellow{
-    background:#fff9e8;
-}
-
-.soft-purple{
-    background:#f7f0ff;
-}
-
-.soft-orange{
-    background:#fff4eb;
-}
-
-/* SECTION SUBHEADINGS */
+.soft-red{ background:#fff0ee; }
+.soft-green{ background:#eefaf4; }
+.soft-blue{ background:#eef5ff; }
+.soft-yellow{ background:#fff8e8; }
+.soft-purple{ background:#f6f0ff; }
+.soft-pink{ background:#fff0f7; }
+.soft-teal{ background:#eefcf9; }
+.soft-brown{ background:#fff6ef; }
+.soft-grey{ background:#f5f5f5; }
 
 .text-section h4{
     font-size:1rem;
@@ -184,33 +149,15 @@ iframe{
     font-weight:700;
 }
 
-/* DIFFERENT H4 COLOURS */
-
-.heading-red{
-    color:#b22222;
-}
-
-.heading-green{
-    color:#147d64;
-}
-
-.heading-blue{
-    color:#1d4ed8;
-}
-
-.heading-gold{
-    color:#c48a00;
-}
-
-.heading-purple{
-    color:#7e22ce;
-}
-
-.heading-orange{
-    color:#ea580c;
-}
-
-/* PARAGRAPHS */
+.heading-red{ color:#b22222; }
+.heading-green{ color:#147d64; }
+.heading-blue{ color:#1d4ed8; }
+.heading-gold{ color:#c48a00; }
+.heading-purple{ color:#7e22ce; }
+.heading-pink{ color:#db2777; }
+.heading-teal{ color:#0f766e; }
+.heading-brown{ color:#92400e; }
+.heading-grey{ color:#374151; }
 
 .text-section p{
     color:#555;
@@ -241,117 +188,255 @@ iframe{
     <h1>Things We Love in Malaysia</h1>
 
     <p>
-        A vibrant celebration of Malaysia’s cultures, flavours, traditions,
-        landscapes, and the beautiful everyday moments that make the country feel alive.
+        A vibrant celebration of Malaysia’s cultures, flavours,
+        traditions, landscapes, and everyday beauty.
     </p>
 
 </div>
 
 <div class="container">
 
-    <!-- CARD 1 -->
+    <!-- 1 -->
 
     <div class="card">
-
         <iframe src=""></iframe>
 
         <h3 class="food-title">Malaysian Food</h3>
 
         <div class="subheading-group">
-            <div class="mini-sub gold">Rich Cultural Flavours</div>
-            <div class="mini-sub red">Comfort in Every Meal</div>
+            <div class="mini-sub food-sub">Rich Cultural Flavours</div>
+            <div class="mini-sub food-sub">Comfort in Every Meal</div>
         </div>
 
         <div class="text-section soft-red">
-
             <h4 class="heading-red">Diversity of Taste</h4>
-
             <p>
-                Malaysian cuisine blends Malay, Chinese, Indian, and local traditions into bold flavours that feel both exciting and comforting.
+                Malaysian cuisine blends traditions and spices into flavours that feel both exciting and familiar.
             </p>
-
         </div>
 
         <div class="text-section soft-yellow">
-
             <h4 class="heading-gold">Food as Connection</h4>
-
             <p>
-                Sharing meals together is deeply rooted in Malaysian culture, turning food into moments of laughter, family, and community.
+                Meals often become moments where families and communities gather together and bond.
             </p>
-
         </div>
-
     </div>
 
-    <!-- CARD 2 -->
+    <!-- 2 -->
 
     <div class="card">
-
         <iframe src=""></iframe>
 
         <h3 class="nature-title">Nature & Islands</h3>
 
         <div class="subheading-group">
-            <div class="mini-sub teal">Tropical Beauty</div>
-            <div class="mini-sub blue">Peaceful Escapes</div>
+            <div class="mini-sub nature-sub">Tropical Beauty</div>
+            <div class="mini-sub nature-sub">Peaceful Escapes</div>
         </div>
 
         <div class="text-section soft-green">
-
-            <h4 class="heading-green">Breathtaking Landscapes</h4>
-
+            <h4 class="heading-green">Natural Landscapes</h4>
             <p>
-                From rainforest canopies to turquoise waters, Malaysia’s natural scenery reflects both adventure and serenity.
+                Rainforests, mountains, and beaches make Malaysia rich with breathtaking scenery.
             </p>
-
         </div>
 
         <div class="text-section soft-blue">
-
-            <h4 class="heading-blue">A Place to Recharge</h4>
-
+            <h4 class="heading-blue">Places to Recharge</h4>
             <p>
-                Islands, mountains, and hidden retreats create peaceful spaces where people can slow down and reconnect with nature.
+                Islands and nature retreats provide calm spaces away from busy city life.
             </p>
-
         </div>
-
     </div>
 
-    <!-- CARD 3 -->
+    <!-- 3 -->
 
     <div class="card">
-
         <iframe src=""></iframe>
 
         <h3 class="culture-title">Cultural Diversity</h3>
 
         <div class="subheading-group">
-            <div class="mini-sub orange">Different Traditions</div>
-            <div class="mini-sub purple">One Shared Identity</div>
+            <div class="mini-sub culture-sub">Different Traditions</div>
+            <div class="mini-sub culture-sub">One Shared Identity</div>
         </div>
 
         <div class="text-section soft-orange">
-
-            <h4 class="heading-orange">A Blend of Cultures</h4>
-
+            <h4 class="heading-blue">A Blend of Cultures</h4>
             <p>
-                Languages, festivals, religions, and customs from many communities come together to shape Malaysia’s unique identity.
+                Languages, festivals, and customs from many communities shape Malaysian identity.
             </p>
-
         </div>
 
         <div class="text-section soft-purple">
-
-            <h4 class="heading-purple">Unity Through Diversity</h4>
-
+            <h4 class="heading-purple">Unity Together</h4>
             <p>
-                Despite cultural differences, Malaysians continue to build connections through shared experiences and everyday life.
+                Diversity continues to create meaningful connections between different communities.
             </p>
+        </div>
+    </div>
 
+    <!-- 4 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="market-title">Night Markets</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub market-sub">Street Food Culture</div>
+            <div class="mini-sub market-sub">Lively Evenings</div>
         </div>
 
+        <div class="text-section soft-yellow">
+            <h4 class="heading-gold">Busy Atmosphere</h4>
+            <p>
+                Pasar malam are filled with lights, aromas, music, and endless local food choices.
+            </p>
+        </div>
+
+        <div class="text-section soft-brown">
+            <h4 class="heading-brown">Community Spaces</h4>
+            <p>
+                Markets become gathering places where people shop, eat, and spend time together.
+            </p>
+        </div>
+    </div>
+
+    <!-- 5 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="city-title">Modern Cities</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub city-sub">Urban Energy</div>
+            <div class="mini-sub city-sub">Creative Spaces</div>
+        </div>
+
+        <div class="text-section soft-purple">
+            <h4 class="heading-purple">Modern Skylines</h4>
+            <p>
+                Cities like Kuala Lumpur balance towering architecture with cultural heritage.
+            </p>
+        </div>
+
+        <div class="text-section soft-blue">
+            <h4 class="heading-blue">Innovation & Lifestyle</h4>
+            <p>
+                Cafés, galleries, and creative districts bring modern Malaysian culture to life.
+            </p>
+        </div>
+    </div>
+
+    <!-- 6 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="festival-title">Festivals</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub festival-sub">Colourful Celebrations</div>
+            <div class="mini-sub festival-sub">Shared Traditions</div>
+        </div>
+
+        <div class="text-section soft-pink">
+            <h4 class="heading-pink">Celebration & Joy</h4>
+            <p>
+                Festivals throughout the year reflect the richness of Malaysian traditions and cultures.
+            </p>
+        </div>
+
+        <div class="text-section soft-yellow">
+            <h4 class="heading-gold">Bringing People Together</h4>
+            <p>
+                Celebrations create moments of unity, generosity, and togetherness across communities.
+            </p>
+        </div>
+    </div>
+
+    <!-- 7 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="art-title">Local Art</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub art-sub">Creative Expression</div>
+            <div class="mini-sub art-sub">Modern & Traditional</div>
+        </div>
+
+        <div class="text-section soft-teal">
+            <h4 class="heading-teal">Street Creativity</h4>
+            <p>
+                Murals and public art add personality and storytelling to Malaysian streets.
+            </p>
+        </div>
+
+        <div class="text-section soft-green">
+            <h4 class="heading-green">Cultural Inspiration</h4>
+            <p>
+                Traditional crafts continue to influence modern Malaysian artistic expression.
+            </p>
+        </div>
+    </div>
+
+    <!-- 8 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="cafe-title">Coffee & Cafés</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub cafe-sub">Warm Atmosphere</div>
+            <div class="mini-sub cafe-sub">Everyday Comfort</div>
+        </div>
+
+        <div class="text-section soft-brown">
+            <h4 class="heading-brown">Cozy Spaces</h4>
+            <p>
+                Malaysian cafés blend modern aesthetics with comforting local hospitality.
+            </p>
+        </div>
+
+        <div class="text-section soft-yellow">
+            <h4 class="heading-gold">Conversation & Community</h4>
+            <p>
+                Kopitiams and cafés become places where people gather, work, and connect.
+            </p>
+        </div>
+    </div>
+
+    <!-- 9 -->
+
+    <div class="card">
+        <iframe src=""></iframe>
+
+        <h3 class="life-title">Everyday Life</h3>
+
+        <div class="subheading-group">
+            <div class="mini-sub life-sub">Simple Joys</div>
+            <div class="mini-sub life-sub">Feeling at Home</div>
+        </div>
+
+        <div class="text-section soft-grey">
+            <h4 class="heading-grey">Daily Moments</h4>
+            <p>
+                Sometimes it is the small everyday experiences that make Malaysia feel special.
+            </p>
+        </div>
+
+        <div class="text-section soft-blue">
+            <h4 class="heading-blue">A Sense of Belonging</h4>
+            <p>
+                The people, sounds, weather, and culture create a feeling of warmth and familiarity.
+            </p>
+        </div>
     </div>
 
 </div>
