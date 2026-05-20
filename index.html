@@ -23,13 +23,13 @@ body{
 
 .header{
     text-align:center;
-    margin-bottom:50px;
+    margin-bottom:55px;
 }
 
 .header h1{
     font-size:3.5rem;
     color:#7b3f00;
-    margin-bottom:15px;
+    margin-bottom:18px;
     letter-spacing:1px;
 }
 
@@ -46,9 +46,9 @@ body{
 
 .card{
     background:white;
-    border-radius:18px;
-    padding:18px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 10px 24px rgba(0,0,0,0.08);
     transition:0.3s ease;
 }
 
@@ -60,30 +60,53 @@ iframe{
     width:100%;
     height:220px;
     border:none;
-    border-radius:12px;
-    margin-bottom:18px;
+    border-radius:14px;
+    margin-bottom:22px;
     background:#ddd;
 }
 
-/* MAIN SMALL SUBHEADING */
+/* MAIN CARD TITLE */
 .card h3{
     color:#7b3f00;
-    margin-bottom:8px;
-    font-size:1.25rem;
+    margin-bottom:10px;
+    font-size:1.3rem;
 }
 
-/* NEW EXTRA SUBHEADINGS */
+/* SMALL SUBHEADINGS */
 .mini-sub{
     font-size:0.9rem;
     color:#9a6b39;
-    margin-bottom:6px;
+    margin-bottom:7px;
     font-weight:600;
 }
 
-.card p{
+/* SPACING BELOW SMALL SUBHEADINGS */
+.subheading-group{
+    margin-bottom:24px;
+}
+
+/* PARAGRAPH SECTION */
+.text-section{
+    margin-top:20px;
+}
+
+/* PARAGRAPH SUBHEADINGS */
+.text-section h4{
+    color:#7b3f00;
+    font-size:1rem;
+    margin-bottom:10px;
+}
+
+/* PARAGRAPHS */
+.text-section p{
     color:#555;
-    line-height:1.6;
+    line-height:1.7;
     font-size:0.95rem;
+}
+
+/* SPACE BETWEEN THE TWO PARAGRAPH BLOCKS */
+.text-section + .text-section{
+    margin-top:28px;
 }
 
 @media(max-width:900px){
@@ -109,128 +132,92 @@ iframe{
 
     <!-- CARD 1 -->
     <div class="card">
+
         <iframe src=""></iframe>
 
         <h3>Malaysian Food</h3>
 
-        <div class="mini-sub">Rich Cultural Flavours</div>
-        <div class="mini-sub">Comfort in Every Meal</div>
+        <div class="subheading-group">
+            <div class="mini-sub">Rich Cultural Flavours</div>
+            <div class="mini-sub">Comfort in Every Meal</div>
+        </div>
 
-        <p>
-            Rich flavours, diverse cultures, and unforgettable dishes make Malaysian cuisine truly special.
-        </p>
+        <div class="text-section">
+            <h4>Diversity of Taste</h4>
+
+            <p>
+                Malaysian cuisine blends Malay, Chinese, Indian, and local traditions into flavours that are bold, comforting, and unforgettable.
+            </p>
+        </div>
+
+        <div class="text-section">
+            <h4>Food as Connection</h4>
+
+            <p>
+                Meals in Malaysia are more than food — they bring families, friends, and communities together in meaningful ways.
+            </p>
+        </div>
+
     </div>
 
     <!-- CARD 2 -->
     <div class="card">
+
         <iframe src=""></iframe>
 
         <h3>Nature & Islands</h3>
 
-        <div class="mini-sub">Tropical Beauty</div>
-        <div class="mini-sub">Peaceful Escapes</div>
+        <div class="subheading-group">
+            <div class="mini-sub">Tropical Beauty</div>
+            <div class="mini-sub">Peaceful Escapes</div>
+        </div>
 
-        <p>
-            Malaysia is home to breathtaking beaches, rainforests, and beautiful tropical scenery.
-        </p>
+        <div class="text-section">
+            <h4>Breathtaking Landscapes</h4>
+
+            <p>
+                From rainforests to crystal-clear beaches, Malaysia offers some of the most beautiful natural scenery in Southeast Asia.
+            </p>
+        </div>
+
+        <div class="text-section">
+            <h4>A Place to Relax</h4>
+
+            <p>
+                The calm atmosphere of islands and nature retreats creates spaces where people can reconnect with themselves and others.
+            </p>
+        </div>
+
     </div>
 
     <!-- CARD 3 -->
     <div class="card">
+
         <iframe src=""></iframe>
 
         <h3>Cultural Diversity</h3>
 
-        <div class="mini-sub">Different Traditions</div>
-        <div class="mini-sub">One Shared Identity</div>
+        <div class="subheading-group">
+            <div class="mini-sub">Different Traditions</div>
+            <div class="mini-sub">One Shared Identity</div>
+        </div>
 
-        <p>
-            The blend of traditions and communities creates a vibrant and welcoming atmosphere.
-        </p>
-    </div>
+        <div class="text-section">
+            <h4>Multicultural Society</h4>
 
-    <!-- CARD 4 -->
-    <div class="card">
-        <iframe src=""></iframe>
+            <p>
+                Malaysia’s diversity is reflected in its languages, traditions, religions, and everyday experiences across the country.
+            </p>
+        </div>
 
-        <h3>Night Markets</h3>
+        <div class="text-section">
+            <h4>Unity Through Diversity</h4>
 
-        <div class="mini-sub">Street Food Culture</div>
-        <div class="mini-sub">Lively Evenings</div>
+            <p>
+                Despite differences in background and culture, communities continue to shape a shared Malaysian identity together.
+            </p>
+        </div>
 
-        <p>
-            Bustling pasar malam filled with food, lights, and local treasures bring life to every evening.
-        </p>
-    </div>
-
-    <!-- CARD 5 -->
-    <div class="card">
-        <iframe src=""></iframe>
-
-        <h3>Modern Cities</h3>
-
-        <div class="mini-sub">Urban Energy</div>
-        <div class="mini-sub">Creative Spaces</div>
-
-        <p>
-            From Kuala Lumpur’s skyline to hidden urban cafés, Malaysia balances tradition and modern life beautifully.
-        </p>
-    </div>
-
-    <!-- CARD 6 -->
-    <div class="card">
-        <iframe src=""></iframe>
-
-        <h3>Festivals</h3>
-
-        <div class="mini-sub">Colourful Celebrations</div>
-        <div class="mini-sub">Community Spirit</div>
-
-        <p>
-            Celebrations throughout the year reflect the unity and diversity of Malaysian culture.
-        </p>
-    </div>
-
-    <!-- CARD 7 -->
-    <div class="card">
-        <iframe src=""></iframe>
-
-        <h3>Local Art</h3>
-
-        <div class="mini-sub">Creative Expression</div>
-        <div class="mini-sub">Modern & Traditional</div>
-
-        <p>
-            Street murals, handmade crafts, and creative spaces showcase Malaysia’s artistic spirit.
-        </p>
-    </div>
-
-    <!-- CARD 8 -->
-    <div class="card">
-        <iframe src=""></iframe>
-
-        <h3>Coffee & Cafés</h3>
-
-        <div class="mini-sub">Cozy Atmosphere</div>
-        <div class="mini-sub">Everyday Comfort</div>
-
-        <p>
-            Cozy cafés and kopitiams create spaces full of warmth, conversation, and creativity.
-        </p>
-    </div>
-
-    <!-- CARD 9 -->
-    <div class="card">
-        <iframe src=""></iframe>
-
-        <h3>Everyday Life</h3>
-
-        <div class="mini-sub">Simple Joys</div>
-        <div class="mini-sub">Feeling at Home</div>
-
-        <p>
-            Sometimes the little moments — the weather, the people, the sounds — are what make Malaysia feel like home.
-        </p>
     </div>
 
 </div>
